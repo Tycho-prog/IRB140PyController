@@ -18,8 +18,6 @@ console = console_class(main_window,1,0,400,300,log) #frame,row,col,width,height
 robotFrontend = robotController(main_window,0,1,400,400,console)
 camWindow = camera_window(main_window,0,0,400,450,log,console)
 
-
-
 main_window.bind("<Up>",lambda e: robotFrontend.movementEvent(e))
 main_window.bind("<Left>",lambda e: robotFrontend.movementEvent(e))
 main_window.bind("<Right>",lambda e: robotFrontend.movementEvent(e))
